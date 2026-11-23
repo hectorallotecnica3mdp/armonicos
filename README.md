@@ -4,7 +4,16 @@ Simulador educativo, autocontenido y adaptable a móviles para explorar cómo la
 
 ## Probar localmente
 
-Abrí `index.html` en un navegador moderno. No requiere dependencias ni compilación.
+Abrí `index.html` en un navegador moderno. No requiere dependencias ni compilación. La instalación como app y el modo sin conexión requieren servir el sitio por HTTPS o desde `localhost`; abrir el archivo directamente no alcanza.
+
+## Instalar en el teléfono
+
+La app se instala desde su sitio publicado en GitHub Pages:
+
+- **Android (Chrome):** abrí el sitio y elegí **Instalar app** en el menú del navegador. Si todavía no aparece, esperá unos segundos y recargá la página para que se registre el modo sin conexión.
+- **iPhone/iPad (Safari):** abrí el sitio, tocá **Compartir → Añadir a pantalla de inicio**. En iOS no se instala desde el menú de Chrome.
+
+La app puede abrirse sin conexión después de cargarla una vez con internet.
 
 ## Publicar en GitHub Pages
 
