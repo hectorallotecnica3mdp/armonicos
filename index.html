@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#101f35">
 <meta name="description" content="Simulador visual para explorar cómo los armónicos deforman la corriente y la tensión de una instalación eléctrica.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Armónicos">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
 <title>Armónicos en instalaciones eléctricas</title>
 <style>
 :root{--bg:#eaf0f4;--panel:#fff;--ink:#14212b;--mute:#5b6b78;--line:#d3dce3;--cur:#d6336c;--fund:#8896a2;--volt:#2b6cb0;--ok:#2f855a;--warn:#b7550f;--bad:#c53030;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -409,6 +414,11 @@ $("tabs").onclick=e=>{const b=e.target.closest("button");if(b){tabSel=b.dataset.
 window.addEventListener("resize",()=>{applyTab();last&&update()});
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change",update);
 loads=P.of.map(([t,a])=>({id:uid++,t,a}));buildList();applyTab();update();
+</script>
+<script>
+if ("serviceWorker" in navigator) {
+ window.addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(error=>console.error("No se pudo registrar el modo sin conexión.",error)));
+}
 </script>
 </body>
 </html>
