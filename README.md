@@ -6,6 +6,8 @@ Simulador educativo, autocontenido y adaptable a móviles para explorar cómo la
 
 Abrí `index.html` en un navegador moderno. No requiere dependencias ni compilación. La instalación como app y el modo sin conexión requieren servir el sitio por HTTPS o desde `localhost`; abrir el archivo directamente no alcanza.
 
+En teléfonos, los controles quedan en un panel desplazable arriba y el gráfico seleccionado permanece visible abajo. Las pestañas permiten cambiar entre corrientes, tensión y espectro.
+
 ## Instalar en el teléfono
 
 La app se instala desde su sitio publicado en GitHub Pages:
