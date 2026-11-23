@@ -62,7 +62,7 @@ ul.dx{margin:0;padding-left:20px}ul.dx li{margin:6px 0}
 .leg{flex-wrap:wrap;gap:6px}
 .chip{display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:4px 10px;border-radius:999px;font-size:.9rem;color:var(--ink)}
 .chip[aria-pressed="true"]{border-color:var(--ink)}
-.chip[aria-pressed="false"]{opacity:.5;text-decoration:line-through}
+.chip[aria-pressed="false"]{color:var(--mute);text-decoration:line-through}
 :root{--p1:#8a5a2b;--p2:#d62828;--p3:#222b33;--pn:#22aee8}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--p1:#c98c56;--p2:#ff5a5a;--p3:#c3ccd4;--pn:#7fd3ff}}
 :root[data-theme="dark"]{--p1:#c98c56;--p2:#ff5a5a;--p3:#c3ccd4;--pn:#7fd3ff}
@@ -105,7 +105,7 @@ section .panel{margin-bottom:0;padding:8px 10px}
 .tabs button[aria-pressed="true"]{background:var(--volt);border-color:var(--volt);color:#fff}
 }
 /* A graph-first, scrollable classroom layout that works on narrow screens. */
-:root{--bg:#f2f6fa;--panel:#fff;--ink:#17263b;--mute:#617187;--line:#dce5ed;--volt:#2874e8;--ok:#178b6b;--warn:#cf7d16;--bad:#c34755;--cur:#2874e8;--fund:#9ba8b8;--p1:#2874e8;--p2:#df5077;--p3:#29394d;--pn:#00a7bd;color-scheme:light}
+:root{--bg:#e8eef5;--panel:#f8fafc;--ink:#142238;--mute:#33465d;--line:#bac7d5;--volt:#1d5fc4;--ok:#087251;--warn:#96500c;--bad:#a62b3e;--cur:#1d5fc4;--fund:#526579;--p1:#1d5fc4;--p2:#b82e54;--p3:#29394d;--pn:#006b7a;color-scheme:light}
 body{height:auto;min-height:100vh;overflow:auto;background:var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5}
 .wrap{height:auto;max-width:1440px;margin:0 auto;padding:24px clamp(14px,3vw,40px) 48px;display:block}
 h1{font-size:clamp(2rem,5vw,3.35rem);line-height:1.04;letter-spacing:-.045em;margin:0}
